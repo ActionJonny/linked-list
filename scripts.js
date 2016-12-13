@@ -12,9 +12,9 @@
 function createBookmark(bookmark) {
   $('.right-container').append(
     `<div class="new-bookmark">
-      <div class="website-title-bookmark">${bookmark.title}
+      <div class="new-website-title-bookmark">${bookmark.title}
       </div>
-      <div class="website-url-bookmark">
+      <div class="new-website-url-bookmark">
       <a href="${bookmark.url}" target="_blank"> ${bookmark.url}</a>
       </div>
       <div class="buttons">
