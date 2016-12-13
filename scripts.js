@@ -27,3 +27,7 @@ $('.enter-button').on('click', function(){
 $('.right-container').on('click', '.delete-button', function(){
   $(this).parent().remove()
 })
+
+$('.right-container').on('click', '.read-button', function(){
+  $(this).toggleClass('read');
+})
