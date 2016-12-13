@@ -31,3 +31,7 @@ $('.right-container').on('click', '.delete-button', function(){
 $('.right-container').on('click', '.read-button', function(){
   $(this).toggleClass('read');
 })
+
+$('.right-container').on('click', '.bookmarked-container', function(){
+  $(this).toggleClass('bookmarked-container-read');
+})

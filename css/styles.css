@@ -11,6 +11,15 @@ body {
   background-color: #455A64;
 }
 
+.linked-list-logo {
+  position: absolute;
+  color: #fff;
+  top: 20%;
+  left: 9%;
+  font-size: 75px;
+  font-weight: 800;
+}
+
 .website-title-input, .website-url-input {
   position: absolute;
   left: 10%;
@@ -60,6 +69,7 @@ body {
   height: 100%;
   background-color: #CFD8DC;
   padding: 30px 30px;
+  content: none;
 }
 
 h5 {
@@ -70,4 +80,20 @@ h5 {
 
 hr {
   border: 1px solid #CFD8DC;
+}
+
+.read-button {
+  width: 40px;
+  float: left;
+  color: #455A64;
+  background-color: transparent;
+  border: none;
+}
+
+.delete-button {
+  width: 30px;
+  float: right;
+  color: #455A64;
+  background-color: transparent;
+  border: none;
 }
