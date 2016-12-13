@@ -1,13 +1,30 @@
+// function createBookmark(bookmark) {
+//   $('.right-container').append(
+//     `<li class='bookmarked-container'>
+//       <h3 class='website-title-bookmark'>${bookmark.title}</h3>
+//       <h4 class='website-url-bookmark'>${bookmark.url}</h4>
+//       <button class='read-button'>Read</button>
+//       <button class='delete-button'>Delete</button>
+//     </li>`
+//   )
+// }
+
 function createBookmark(bookmark) {
   $('.right-container').append(
-    `<li class='bookmarked-container'>
-      <h3 class='website-title-bookmark'>${bookmark.title}</h3>
-      <h4 class='website-url-bookmark'>${bookmark.url}</h4>
-      <button class='read-button'>Read</button>
-      <button class='delete-button'>Delete</button>
-    </li>`
-  )
-}
+    `<div class="new-bookmark">
+      <div class="website-title-bookmark">${bookmark.title}
+      </div>
+      <div class="website-url-bookmark">
+      <a href="${bookmark.url}" target="_blank"> ${bookmark.url}</a>
+      </div>
+      <div class="buttons">
+      <button class="read-button">Read
+      </button>
+      <button class="delete-button">Delete
+      </button>
+      </div>
+      </div>`
+    )}
 
 function Bookmark(title, url){
  this.title = title;
@@ -21,9 +38,8 @@ $('.enter-button').on('click', function(){
  createBookmark(bookmark);
  $('.website-title-input').val('')
  $('.website-url-input').val('')
-
 });
 
 $('.right-container').on('click', '.delete-button', function(){
-  $(this).parent().remove()
+  $(this).parent().parent().remove()
 })
