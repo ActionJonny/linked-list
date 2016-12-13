@@ -21,8 +21,13 @@ $('.enter-button').on('click', function(){
  createBookmark(bookmark);
  $('.website-title-input').val('')
  $('.website-url-input').val('')
-
 });
+
+$('.enter-button').attr('disabled', 'disabled')
+
+// $('.website-title-input', '.website-url-input').keydown(function(){
+//   $('.enter-button').removeAttr('disabled', 'disabled')
+// })
 
 $('.right-container').on('click', '.delete-button', function(){
   $(this).parent().remove()
