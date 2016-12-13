@@ -48,6 +48,8 @@ $('.enter-button').on('click', function(){
  createBookmark(bookmark);
  // $('.website-title-input').val('')
  // $('.website-url-input').val('')
+ resetTitleInput();
+ resetUrlInput();
 });
 
 $('.right-container').on('click', '.delete-button', function(){
@@ -57,5 +59,13 @@ $('.right-container').on('click', '.delete-button', function(){
 
 $('.right-container').on('click' , '.read-button', function() {
   $(this).parent().parent().toggleClass("read");
-
 })
+
+// helpers to cleaer input fields
+function resetTitleInput() {
+  $('.website-title-input').val('');
+}
+
+function resetUrlInput() {
+  $('.website-url-input').val('');
+}
