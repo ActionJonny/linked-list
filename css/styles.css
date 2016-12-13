@@ -80,6 +80,7 @@ span img {
   height: 100%;
   background-color: #CFD8DC;
   padding: 30px 30px;
+  overflow: auto;
 }
 
 
@@ -90,6 +91,12 @@ span img {
   border: 2px solid #607D8B;
   text-align: center;
   margin-bottom: 20px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid black;
 }
 
 
