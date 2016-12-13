@@ -19,6 +19,9 @@ $('.enter-button').on('click', function(){
  var url = $('.website-url-input').val();
  var bookmark = new Bookmark(title, url);
  createBookmark(bookmark);
+ $('.website-title-input').val('')
+ $('.website-url-input').val('')
+
 });
 
 $('.right-container').on('click', '.delete-button', function(){

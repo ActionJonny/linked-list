@@ -11,15 +11,6 @@ body {
   background-color: #455A64;
 }
 
-.linked-list-logo {
-  position: absolute;
-  color: #fff;
-  top: 20%;
-  left: 9%;
-  font-size: 75px;
-  font-weight: 800;
-}
-
 .website-title-input, .website-url-input {
   position: absolute;
   left: 10%;
