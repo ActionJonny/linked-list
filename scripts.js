@@ -9,13 +9,34 @@
 //   )
 // }
 
+var counter = 0;
+console.log(counter);
+
+
+
 $("button").attr('disabled','disabled');
 // When User Fills Out Form Completely
-$(".website-url-input").keyup(function(){
-$("button").removeAttr('disabled');
-});
+// $(".website-url-input").keyup(function(){
+// $("button").removeAttr('disabled');
+// });
 
+$(".website-title-input, .website-url-input").on('keyup', function(){
+  var title = $('.website-title-input').val();
+  var url = $('.website-url-input').val();
+  if(title.length > 1 && url.length > 1){
+    enableSubmit()
+  } else {
+    disableSubmit()
+  }
+})
 
+function enableSubmit() {
+  $(".enter-button").prop('disabled', false)
+}
+
+function disableSubmit() {
+  $(".enter-button").prop('disabled', true)
+}
 
 function createBookmark(bookmark) {
   $('.right-container').append(
@@ -46,16 +67,20 @@ $('.enter-button').on('click', function(){
  var url = $('.website-url-input').val();
  var bookmark = new Bookmark(title, url);
  createBookmark(bookmark);
- // $('.website-title-input').val('')
- // $('.website-url-input').val('')
  resetTitleInput();
  resetUrlInput();
+ disableSubmit();
+ updateCount();
 });
+
+function updateCount() {
+  counter++;
+  console.log(counter);
+}
 
 $('.right-container').on('click', '.delete-button', function(){
   $(this).parent().parent().remove()
 })
-
 
 $('.right-container').on('click' , '.read-button', function() {
   $(this).parent().parent().toggleClass("read");
@@ -65,6 +90,7 @@ $('.right-container').on('click' , '.read-button', function() {
 function resetTitleInput() {
   $('.website-title-input').val('');
 }
+// do both.
 
 function resetUrlInput() {
   $('.website-url-input').val('');
