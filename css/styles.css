@@ -12,8 +12,8 @@ body {
 }
 
 span img {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   vertical-align: text-bottom;
 }
 
@@ -23,7 +23,7 @@ span img {
   color: #fff;
   top: 20%;
   left: 10%;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -63,7 +63,7 @@ span img {
   background-color: #FFD773;
 }
 
-.enter-button:focus, .website-url-input, .website-title-input, .read-button, .delete-button {
+.read-button {
   outline: none;
 }
 
@@ -79,7 +79,7 @@ span img {
 
 .new-bookmark {
   width: 75%;
-  margin: auto;
+  margin: 0 20px;
   background-color: white;
   border: 2px solid #607D8B;
   text-align: center;
@@ -88,10 +88,10 @@ span img {
 
 .new-website-title-bookmark {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 800;
   color: #455A64;
   text-align: left;
-  margin: 10px 15px;;
+  margin: 10px 15px;
 }
 
 .new-website-url-bookmark  {
@@ -102,36 +102,58 @@ span img {
 
 .new-website-url-bookmark a {
   color: #607D8B;
-
   text-decoration: none;
   border-bottom: 2px solid #607D8B;
 }
 
 .buttons {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
+
 .read-button{
-  float: left;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+}
+.read-button:hover {
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
+
 }
 
 .delete-button {
-  /*float-r*/
+  border: none;
+  background-color:
+  transparent;
+  border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+}
+.delete-button:hover {
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
+
 }
 
 a:hover {
-  color: black;
+  color: #455A64;
   text-decoration: none;
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
 }
 
 .read {
   background-color: #F2F4F4;
-
 }
 .read a {
   color: #CFD8DC;
   border-bottom: 2px solid #CFD8DC;
-
+}
+.read .read-button {
+  color: #F05A28;
+  border-bottom: none;
 }
 
 

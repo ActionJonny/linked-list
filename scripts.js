@@ -9,6 +9,12 @@
 //   )
 // }
 
+$("button").attr('disabled','disabled');
+// When User Fills Out Form Completely
+$(".website-url-input").keyup(function(){
+$("button").removeAttr('disabled');
+});
+
 
 
 function createBookmark(bookmark) {
@@ -49,6 +55,5 @@ $('.right-container').on('click', '.delete-button', function(){
 
 $('.right-container').on('click' , '.read-button', function() {
   $(this).parent().parent().toggleClass("read");
-
 
 })
