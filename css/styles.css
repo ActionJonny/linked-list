@@ -63,6 +63,7 @@ span img {
   background-color: #FFD773;
 }
 
+
 .read-button {
   outline: none;
 }
@@ -84,44 +85,55 @@ span img {
   border: 2px solid #607D8B;
   text-align: center;
   margin-bottom: 20px;
+  height: 18%;
 }
 
+hr {
+  border: 1px solid #CFD8DC;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .new-website-title-bookmark {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
   color: #455A64;
   text-align: left;
   margin: 10px 15px;
+  /*border-bottom: 2px solid #CFD8DC;*/
 }
 
 .new-website-url-bookmark  {
   color: #607D8B;
   text-align: left;
-  margin: 10px 15px;
+  margin: 8px 15px;
+
 }
 
 .new-website-url-bookmark a {
   color: #607D8B;
   text-decoration: none;
-  border-bottom: 2px solid #607D8B;
+  border-bottom: 1px solid #F2F4F4;
+
 }
 
-.buttons {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.new-website-url-bookmark a:hover {
+  color: #455A64;
+  border-bottom: 2px solid #FFC107;
+  font-weight: 600;
 }
-
 
 .read-button{
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #F2F4F4;
   color: #455A64;
+  float: left;
+  margin-left: 10px;
 }
+
 .read-button:hover {
   border-bottom: 2px solid #FFC107;
   font-weight: 800;
-
 }
 
 .delete-button {
@@ -130,16 +142,11 @@ span img {
   transparent;
   border-bottom: 1px solid #F2F4F4;
   color: #455A64;
+  float: right;
+  margin-right: 10px;
 }
+
 .delete-button:hover {
-  border-bottom: 2px solid #FFC107;
-  font-weight: 800;
-
-}
-
-a:hover {
-  color: #455A64;
-  text-decoration: none;
   border-bottom: 2px solid #FFC107;
   font-weight: 800;
 }
@@ -149,8 +156,13 @@ a:hover {
 }
 .read a {
   color: #CFD8DC;
-  border-bottom: 2px solid #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
 }
+.read a:hover {
+  font-weight: 400;
+  border-bottom: none;
+}
+
 .read .read-button {
   color: #F05A28;
   border-bottom: none;

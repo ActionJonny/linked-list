@@ -22,9 +22,11 @@ function createBookmark(bookmark) {
     `<div class="new-bookmark">
       <div class="new-website-title-bookmark">${bookmark.title}
       </div>
+      <hr>
       <div class="new-website-url-bookmark">
       <a href="${bookmark.url}" target="_blank"> ${bookmark.url}</a>
       </div>
+      <hr>
       <div class="buttons">
       <button class="read-button">Read
       </button>
