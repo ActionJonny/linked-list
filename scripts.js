@@ -9,6 +9,8 @@
 //   )
 // }
 
+
+
 function createBookmark(bookmark) {
   $('.right-container').append(
     `<div class="new-bookmark">
@@ -36,10 +38,17 @@ $('.enter-button').on('click', function(){
  var url = $('.website-url-input').val();
  var bookmark = new Bookmark(title, url);
  createBookmark(bookmark);
- $('.website-title-input').val('')
- $('.website-url-input').val('')
+ // $('.website-title-input').val('')
+ // $('.website-url-input').val('')
 });
 
 $('.right-container').on('click', '.delete-button', function(){
   $(this).parent().parent().remove()
+})
+
+
+$('.right-container').on('click' , '.read-button', function() {
+  $(this).parent().parent().toggleClass("read");
+
+
 })
