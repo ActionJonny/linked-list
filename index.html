@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <title></title>
   </head>
   <body>
     <section class='left-container'>
-      <span class='linked-list-logo'>Linked List</span>
+      <span class='linked-list-logo'>Linked <img src="linked-list-logo.svg"> List</span>
       <input type='text' class='website-title-input' placeholder='Website Title'>
-      <input type='text' class='website-url-input' placeholder='Website URL'>
-      <button type='button' class='enter-button'>Enter</button>
+      <input type="url" class='website-url-input' placeholder='Website URL' pattern="http://" required >
+      <button type='button' class='enter-button' disabled>Enter</button>
     </section>
 
     <ul class='right-container'>

@@ -11,14 +11,21 @@ body {
   background-color: #455A64;
 }
 
+span img {
+  height: 50px;
+  width: 50px;
+  vertical-align: text-bottom;
+}
+
 .linked-list-logo {
-  position: absolute;
+  position: relative;
+  text-align: center;
   color: #fff;
   top: 20%;
-  left: 9%;
-  font-size: 75px;
+  left: 10%;
+  font-size: 40px;
   font-weight: 800;
-}
+} 
 
 .website-title-input, .website-url-input {
   position: absolute;
@@ -35,11 +42,9 @@ body {
   top: 35%;
 }
 
-
 .website-url-input {
   top: 50%;
 }
-
 
 .enter-button {
   position: absolute;
@@ -58,7 +63,8 @@ body {
   background-color: #FFD773;
 }
 
-.enter-button:focus, .website-url-input, .website-title-input, .read-button, .delete-button {
+
+.read-button {
   outline: none;
 }
 
@@ -69,31 +75,93 @@ body {
   height: 100%;
   background-color: #CFD8DC;
   padding: 30px 30px;
-  content: none;
+  overflow: auto;
 }
 
-h5 {
-  padding: 4%;
-  border: 3px solid #607D8B;
+.new-bookmark {
+  width: 75%;
+  margin: 0 20px;
   background-color: white;
+  border: 2px solid #607D8B;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 18%;
 }
 
 hr {
   border: 1px solid #CFD8DC;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.new-website-title-bookmark {
+  font-size: 30px;
+  font-weight: 600;
+  color: #455A64;
+  text-align: left;
+  margin: 10px 15px;
+  /*border-bottom: 2px solid #CFD8DC;*/
 }
 
-.read-button {
-  width: 40px;
-  float: left;
+.new-website-url-bookmark  {
+  color: #607D8B;
+  text-align: left;
+  margin: 8px 15px;
+}
+
+.new-website-url-bookmark a {
+  color: #607D8B;
+  text-decoration: none;
+  border-bottom: 1px solid #F2F4F4;
+}
+
+.new-website-url-bookmark a:hover {
   color: #455A64;
-  background-color: transparent;
+  border-bottom: 2px solid #FFC107;
+  font-weight: 600;
+}
+
+.read-button{
   border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+  float: left;
+  margin-left: 10px;
+}
+
+.read-button:hover {
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
 }
 
 .delete-button {
-  width: 30px;
-  float: right;
-  color: #455A64;
-  background-color: transparent;
   border: none;
+  background-color:
+  transparent;
+  border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+  float: right;
+  margin-right: 10px;
+}
+
+.delete-button:hover {
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
+}
+
+.read {
+  background-color: #F2F4F4;
+}
+.read a {
+  color: #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
+}
+.read a:hover {
+  font-weight: 400;
+  border-bottom: none;
+}
+
+.read .read-button {
+  color: #F05A28;
+  border-bottom: none;
 }
