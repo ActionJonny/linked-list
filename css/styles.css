@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 20%; 
+  top: 20%;
   color: #fff;
   font-size: 50px;
   font-weight: 800;
@@ -128,9 +128,6 @@ hr {
   border-bottom: 1px solid #F2F4F4;
   color: #455A64;
 }
-/*.read-button {
-  outline: none;
-}*/
 
 
 .read-button:hover {
@@ -170,14 +167,6 @@ hr {
   border-bottom: none;
   color: #F05A28;
 }
-
-/*@media screen and (max-width: 750px){
-  .linked-list-logo{
-    font-size: 40px;
-  }
-
-
-}*/
 
 @media screen and (max-width: 790px){
   .left-container {
@@ -221,11 +210,3 @@ hr {
   height: 6%
   }
 }
-
-
-
-/*.wtf{
-  border-bottom: 1px solid grey;
-}*/
-
-/*OVERFLOW_ AUTO!*/
