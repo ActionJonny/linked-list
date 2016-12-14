@@ -25,7 +25,7 @@ span img {
   left: 10%;
   font-size: 40px;
   font-weight: 800;
-}
+} 
 
 .website-title-input, .website-url-input {
   position: absolute;
@@ -106,14 +106,12 @@ hr {
   color: #607D8B;
   text-align: left;
   margin: 8px 15px;
-
 }
 
 .new-website-url-bookmark a {
   color: #607D8B;
   text-decoration: none;
   border-bottom: 1px solid #F2F4F4;
-
 }
 
 .new-website-url-bookmark a:hover {
@@ -167,11 +165,3 @@ hr {
   color: #F05A28;
   border-bottom: none;
 }
-
-
-
-/*.wtf{
-  border-bottom: 1px solid grey;
-}*/
-
-/*OVERFLOW_ AUTO!*/
