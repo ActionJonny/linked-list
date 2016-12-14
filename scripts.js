@@ -34,7 +34,7 @@ function createBookmark(bookmark) {
       <button class="delete-button">Delete</button>
       </div>
     </div>`
-    )};
+  )};
 
 function Bookmark(title, url){
  this.title = title;
@@ -51,6 +51,11 @@ $('.enter-button').on('click', function(){
  addCount();
  unreadCounterDisplay()
 });
+
+function resetInputs() {
+  $('.website-title-input').val('');
+  $('.website-url-input').val('');
+};
 
 function addCount() {
   counter++;
@@ -88,15 +93,14 @@ $('.clear-button').on('click', function(){
   var removeReadBookmarks = $('.right-container').children('.read')
   readCounterAfterClearButton()
   removeReadBookmarks.remove()
-
-})
+});
 
 function readCounterAfterClearButton() {
   var readBookmarks = $('.right-container').children('.read')
   var readBookmarksLength = readBookmarks.length
   readCounter = readBookmarksLength - readCounter
   $('.display-read').text('Read Messages: '  + readCounter)
-}
+};
 
 function updateReadCounter(grabDiv){
   if(grabDiv.hasClass("read")) {
@@ -104,17 +108,12 @@ function updateReadCounter(grabDiv){
   } else {
     readCounter--;
   } readCounterDisplay()
-}
+};
 
 function unreadCounterDisplay() {
   $('.display-unread').text('Unread Messages: ' + counter)
-}
+};
 
 function readCounterDisplay() {
   $('.display-read').text('Read Messages: '  + readCounter)
-}
-
-function resetInputs() {
-  $('.website-title-input').val('');
-  $('.website-url-input').val('');
 };
