@@ -47,9 +47,21 @@ span img {
   top: 50%;
 }
 
-.enter-button {
+.new {
   position: absolute;
-  top: 65%;
+  bottom: 165px;
+  left: 10%;
+}
+
+.display-unread,
+.display-read {
+  top: 75%;
+  color: white;
+}
+
+.enter-button,
+.clear-button {
+  position: absolute;
   left: 10%;
   height: 6%;
   width: 80%;
@@ -60,9 +72,21 @@ span img {
   font-weight: 800;
 }
 
-.enter-button:hover, .enter-button:disabled {
+.enter-button {
+  top: 65%;
+}
+
+.clear-button {
+  top: 80%;
+}
+
+
+.enter-button:hover,
+.enter-button:disabled,
+.clear-button:hover {
   background-color: #FFD773;
 }
+
 
 .right-container {
   position: fixed;
@@ -191,9 +215,18 @@ hr {
   .enter-button {
     height: 10%;
   }
+  .clear-button {
+    top: 85%;
+    height: 10%;
+  }
   span img {
     height: 50px;
     width: 50px;
+  }
+  .new {
+    position: absolute;
+    bottom: 61px;
+    left: 10%;
   }
 }
 
