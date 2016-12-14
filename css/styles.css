@@ -18,14 +18,17 @@ span img {
 }
 
 .linked-list-logo {
-  position: relative;
-  text-align: center;
+  /*position: relative;*/
+  /*text-align: center;*/
   color: #fff;
   top: 20%;
-  left: 10%;
-  font-size: 40px;
+  /*left: 10%;*/
+  font-size: 55px;
   font-weight: 800;
-} 
+  position:relative;
+  display:flex;
+  justify-content: center;
+}
 
 .website-title-input, .website-url-input {
   position: absolute;
@@ -59,7 +62,7 @@ span img {
   font-weight: 800;
 }
 
-.enter-button:hover {
+.enter-button:hover, .enter-button:disabled {
   background-color: #FFD773;
 }
 
@@ -164,4 +167,9 @@ hr {
 .read .read-button {
   color: #F05A28;
   border-bottom: none;
+}
+
+.display-unread, .display-read {
+  color: white;
+  display: inline-flex;
 }
