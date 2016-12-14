@@ -46,20 +46,18 @@ $('.enter-button').on('click', function(){
  var url = $('.website-url-input').val();
  var bookmark = new Bookmark(title, url);
  createBookmark(bookmark);
- resetTitleInput();
- resetUrlInput();
+ resetInputs();
  disableSubmit();
  addCount();
+ unreadCounterDisplay()
 });
 
 function addCount() {
   counter++;
-  console.log(counter);
 };
 
 function subtractCount() {
   counter--;
-  console.log(counter);
 };
 
 $('.right-container').on('click', '.delete-button', function(){
@@ -68,6 +66,10 @@ $('.right-container').on('click', '.delete-button', function(){
   subtractCount();
   if(grabDiv.hasClass("read")) {
     readCounter--;
+    counter++
+    readCounterDisplay()
+  } else {
+    unreadCounterDisplay()
   }
 });
 
@@ -75,23 +77,37 @@ $('.right-container').on('click' , '.read-button', function() {
   var grabDiv = $(this).parent().parent();
   grabDiv.toggleClass("read");
   updateReadCounter(grabDiv);
+  if(grabDiv.hasClass('read')) {
+    counter--
+  } else {
+    counter++
+  } unreadCounterDisplay()
 });
+
+$('.clear-button').on('click', function(){
+  var removeReadBookmarks = $('.right-container').children('.read')
+  removeReadBookmarks.length - readCounter
+  removeReadBookmarks.remove()
+  readCounterDisplay()
+})
 
 function updateReadCounter(grabDiv){
   if(grabDiv.hasClass("read")) {
     readCounter++;
   } else {
     readCounter--;
-  }
-  console.log("readcounter" + readCounter);
+  } readCounterDisplay()
 }
 
-// helpers to cleaer input fields
-function resetTitleInput() {
-  $('.website-title-input').val('');
-};
-// do both.
+function unreadCounterDisplay() {
+  $('.display-unread').text('Unread Messages: ' + counter)
+}
 
-function resetUrlInput() {
+function readCounterDisplay() {
+  $('.display-read').text('Read Messages: '  + readCounter)
+}
+
+function resetInputs() {
+  $('.website-title-input').val('');
   $('.website-url-input').val('');
 };
