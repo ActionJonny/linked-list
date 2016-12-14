@@ -10,8 +10,7 @@
 // }
 
 var counter = 0;
-console.log(counter);
-
+var readCounter = 0;
 
 
 $("button").attr('disabled','disabled');
@@ -70,28 +69,45 @@ $('.enter-button').on('click', function(){
  resetTitleInput();
  resetUrlInput();
  disableSubmit();
- updateCount();
+ addCount();
 });
 
-function updateCount() {
+function addCount() {
   counter++;
   console.log(counter);
-}
+};
+
+function subtractCount() {
+  counter--;
+  console.log(counter);
+};
 
 $('.right-container').on('click', '.delete-button', function(){
-  $(this).parent().parent().remove()
-})
+  $(this).parent().parent().remove();
+  subtractCount();
+});
 
 $('.right-container').on('click' , '.read-button', function() {
-  $(this).parent().parent().toggleClass("read");
-})
+  var grabDiv = $(this).parent().parent();
+  grabDiv.toggleClass("read");
+  updateReadCounter(grabDiv);
+});
+
+function updateReadCounter(grabDiv){
+  if(grabDiv.hasClass("read")) {
+    readCounter++;
+  } else {
+    readCounter--;
+  }
+  console.log(readCounter);
+}
 
 // helpers to cleaer input fields
 function resetTitleInput() {
   $('.website-title-input').val('');
-}
+};
 // do both.
 
 function resetUrlInput() {
   $('.website-url-input').val('');
-}
+};
