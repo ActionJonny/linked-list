@@ -34,7 +34,7 @@ function createBookmark(bookmark) {
       <button class="delete-button">Delete</button>
       </div>
     </div>`
-    )};
+)};
 
 function Bookmark(title, url){
  this.title = title;
