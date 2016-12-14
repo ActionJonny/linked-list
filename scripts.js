@@ -1,13 +1,3 @@
-// function createBookmark(bookmark) {
-//   $('.right-container').append(
-//     `<li class='bookmarked-container'>
-//       <h3 class='website-title-bookmark'>${bookmark.title}</h3>
-//       <h4 class='website-url-bookmark'>${bookmark.url}</h4>
-//       <button class='read-button'>Read</button>
-//       <button class='delete-button'>Delete</button>
-//     </li>`
-//   )
-// }
 
 var counter = 0;
 var readCounter = 0;
