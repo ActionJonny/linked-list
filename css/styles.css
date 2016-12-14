@@ -69,23 +69,24 @@ span img {
 }
 
 .right-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   width: 50%;
   height: 100%;
   background-color: #CFD8DC;
-  padding: 30px 30px;
+  padding-top: 30px;
   overflow: auto;
 }
 
 .new-bookmark {
   width: 75%;
-  margin: 0 20px;
+  margin: 0 auto;
   background-color: white;
   border: 2px solid #607D8B;
   text-align: center;
   margin-bottom: 20px;
-  height: 18%;
+  height: 20%;
+  /*padding: 20px;*/
 }
 
 hr {
@@ -105,7 +106,7 @@ hr {
 .new-website-url-bookmark  {
   color: #607D8B;
   text-align: left;
-  margin: 8px 15px;
+  margin: 16px 15px;
 
 }
 
