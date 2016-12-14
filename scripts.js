@@ -86,10 +86,17 @@ $('.right-container').on('click' , '.read-button', function() {
 
 $('.clear-button').on('click', function(){
   var removeReadBookmarks = $('.right-container').children('.read')
-  removeReadBookmarks.length - readCounter
+  readCounterAfterClearButton()
   removeReadBookmarks.remove()
-  readCounterDisplay()
+
 })
+
+function readCounterAfterClearButton() {
+  var readBookmarks = $('.right-container').children('.read')
+  var readBookmarksLength = readBookmarks.length
+  readCounter = readBookmarksLength - readCounter
+  $('.display-read').text('Read Messages: '  + readCounter)
+}
 
 function updateReadCounter(grabDiv){
   if(grabDiv.hasClass("read")) {
