@@ -84,12 +84,12 @@ $('.right-container').on('click' , '.read-button', function() {
   } unreadCounterDisplay()
 });
 
-// $('.clear-button').on('click', function(){
-//   var removeReadBookmarks = $('.right-container').children('.read')
-//   removeReadBookmarks.length - readCounter
-//   removeReadBookmarks.remove()
-//   readCounterDisplay()
-// })
+$('.clear-button').on('click', function(){
+  var removeReadBookmarks = $('.right-container').children('.read')
+  removeReadBookmarks.length - readCounter
+  removeReadBookmarks.remove()
+  readCounterDisplay()
+})
 
 function updateReadCounter(grabDiv){
   if(grabDiv.hasClass("read")) {
