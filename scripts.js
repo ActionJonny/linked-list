@@ -83,8 +83,12 @@ function subtractCount() {
 };
 
 $('.right-container').on('click', '.delete-button', function(){
-  $(this).parent().parent().remove();
+  var grabDiv = $(this).parent().parent()
+  grabDiv.remove();
   subtractCount();
+  if(grabDiv.hasClass("read")) {
+    readCounter--;
+  }
 });
 
 $('.right-container').on('click' , '.read-button', function() {
